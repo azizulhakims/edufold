@@ -9,16 +9,14 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap" rel="stylesheet"> 
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/fontawesome.min.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
 </head>
 <body>
     <section class="header">
         <nav>
             <a href="index.html"> <img src="images/logo.png" alt=""> </a>
-            <div class="nav-links">
-                <i class="fa fa-times"></i>
-
+            <div class="nav-links" id="navLinks">
+                <i class="fa fa-times" onclick="hiedMenu()"></i>
                 <ul>
                     <li> <a href="">Home</a></li>
                     <li> <a href="">About</a></li>
@@ -27,7 +25,7 @@
                     <li> <a href="">Contact</a></li>
                 </ul>
             </div>
-            <i class="fa fa-bars"></i>
+            <i class="fa fa-bars" onclick="showMenu()"></i>
 
         </nav>
 
@@ -38,6 +36,81 @@
         </div>
 
     </section>
+
+    <section class="course">
+        <h1>Courses we Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non delectus facilis debitis officiis praesentium alias obcaecati? Omnis necessitatibus itaque repellat obcaecati, ipsum quae laborum? Consectetur beatae placeat labore atque dolore vero porro fugiat adipisci laboriosam sed quibusdam sit deserunt quaerat velit iure, voluptatum odio doloribus harum ipsum officiis natus aliquam.</p>
+<div class="row">
+    <div class="course-col">
+        <h3>Intermedia</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus quos, sed, aliquam rem qui autem dignissimos unde quis porro sint. Voluptas dolore saepe nobis explicabo eos, beatae quasi laudantium nulla. Cum, dolor aut at totam perferendis unde! Assumenda, consectetur?</p>
+    </div>
+    <div class="course-col">
+        <h3>Degree</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus quos, sed, aliquam rem qui autem dignissimos unde quis porro sint. Voluptas dolore saepe nobis explicabo eos, beatae quasi laudantium nulla. Cum, dolor aut at totam perferendis unde! Assumenda, consectetur?</p>
+    </div>
+    <div class="course-col">
+        <h3>Post Graduation</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non minus quos, sed, aliquam rem qui autem dignissimos unde quis porro sint. Voluptas dolore saepe nobis explicabo eos, beatae quasi laudantium nulla. Cum, dolor aut at totam perferendis unde! Assumenda, consectetur?</p>
+    </div>
+</div>
+    </section>
+   
+    <section class="campus">
+    <h1>Our Global Campus </h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, quo dolorem sint temporibus mollitia sed et in consequuntur tempore eligendi! A dignissimos placeat, cum iusto sit qui non tempora? Vel.</p>
+    <div class="row">
+        <div class="campus-col">
+            <img src="images/london.png" alt="">
+            <div class="layer">
+                <h3>London</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/newyork.png" alt="">
+            <div class="layer">
+                <h3>New York</h3>
+            </div>
+        </div>
+        <div class="campus-col">
+            <img src="images/washington.png" alt="">
+            <div class="layer">
+                <h3>Washington</h3>
+            </div>
+        </div>
+    </div>
+    </section>
+    <section class="facilities">
+        <h1>Our Facilites</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Debitis, officia ipsa! Nobis magni dolorum laboriosam unde facere aspernatur sapiente veniam omnis, a ad quia ipsa excepturi est fugit nulla vero facilis optio hic fugiat atque cumque fuga. Exercitationem similique eaque ratione possimus consectetur fugiat autem, consequatur tempora cum itaque tenetur?</p>
+        <div class="row">
+            <div class="facilities-col">
+                <img src="images/library.png" alt="">
+                <h3>World class library</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur cum eum quibusdam quod repellat ex ad reprehenderit provident cupiditate at.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/basketball.png" alt="">
+                <h3>Largest Play Ground</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur cum eum quibusdam quod repellat ex ad reprehenderit provident cupiditate at.</p>
+            </div>
+            <div class="facilities-col">
+                <img src="images/cafeteria.png" alt="">
+                <h3>Testy and healthy Food</h3>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aspernatur cum eum quibusdam quod repellat ex ad reprehenderit provident cupiditate at.</p>
+            </div>
+        </div>
+    </section>
+
     
+   <script>
+        var navLinks =document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hiedMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
 </body>
 </html>
